@@ -1,0 +1,21 @@
+{
+    "data": [{
+            "id": 10,
+            "name": "Amy Geri",
+            "review": "I purchased a leather couch for almost $3200.00 dollars and noticed the leather seam on one side was coming undone. I called customer service and was advised because it was over a year that the leather is not covered. Given the price I paid for the couch I expected it to last longer than 3 years. Would not return to mobilia, which is too bad because everything else on the couch was well constructed except the actual leather part.",
+            "star": 1
+        },
+        { "id": 2, "name": "Anis Noor Ali", "review": "We had a good experience with this store. Terri was our sales lady, very attentive and very communicative (called me giving a status update on our various orders about once a week). Bought a cowhide rug from them that arrived when it was supposed to, a set of 6 dining room chairs that arrived earlier than expected, and a buffet floor model with some minor scratches that they happily gave us 20% off on. No issues yet, quality-wise. ", "star": 5 },
+        { "id": 3, "name": "Don MUNRO", "review": "The table base was delayed ..No big deal...Got the table and 11 chairs all in one delivery at the time and date they provided on the phone...Very professional delivery people..Shoes off etc ..and total set up ..Took all wrapping and plastic away..Sales was very straight forward.", "star": 3 },
+        { "id": 4, "name": "Derek Tucker", "review": "Worst service ever. We placed an order for a clearance item in late May. After more than a month the piece showed up and all but one glass pane was broken when opened. The store placed another order... net result is that 5 months after the original order and down-payment and 4 months after paying the full amount we have no light. ", "star": 2 },
+        { "id": 100, "name": "Adrian Salamunovic", "review": "Absolutely unprofessional. Missed three separate delivery dates. Have no respect for their customers. Bad communication. Quick for sale but after sale service and delivery is the worst I have dealt with. Do yourself a favour and bring your business somewhere else. ", "star": 3 },
+        { "id": 5, "name": "Dawn Blair", "review": "We found the perfect couch with no pressure and a good price. I lost my phone in their store, and when I called the next day they had already found it and kept it safe for me! Many thanks to the staff.", "star": 5 },
+        {
+            "id": 4,
+            "name": "Purefolie",
+            "review": "In the last year we have purchased four pieces of furniture from this store, at four different times.  Each and every time we have been assisted by who has been superb in giving advice and helping us to find the perfect pieces to furnish our home.  Custom ordered furniture takes time to arrive, but each and every piece has been fantastic.  I continue to recommend this furniture store to everyone.",
+            "star": 3
+        },
+        { "id": 42, "name": "Mike Chartrand", "review": "As owner of A Laptop Shoppe I am impressed with the Cloud care Managed service offering ,which I use for my managed customers.", "star": 5 }
+    ]
+}

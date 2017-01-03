@@ -1,0 +1,65 @@
+<div class="writePostBtnDiv">
+    <button class="btn btn-primary" (click)="goToAddReview()" routerLinkActive=" active ">Write Review </button>
+</div>
+
+<div class="alert alert-danger" *ngIf="errorMessage ">
+    <strong>Error!</strong> {{errorMessage}}
+</div>
+
+
+<div class="panel-header " style="background-color:#d9d9dd; padding:10px ">
+    <pagination [data]='reviews' [totalDisplay]='displayPerPage' (pageChange)='changePage($event)'></pagination>
+    <div class="pull-right ">
+        <select class='form-control' data-val='true' [(ngModel)]='sortByField' (change)="onSortChange() " name='SortBy'>
+												<option value='MostRecent'>Most Recent</option>
+												<option value='OldestPost'>Oldest Post</option>
+												<option value='HighestScore'>Highest Score</option>
+                                                <option value='LowestScore'>Lowest Score</option>
+      </select>
+    </div>
+
+</div>
+<div class=" panel-body ">
+    <div class="row ">
+        <div class="col-md-12 ">
+            <table class="table table-condensed table-striped ">
+                <thead>
+                    <tr>
+                        <th>Reviews</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr *ngFor="let review of reviews | sort:sortByField | paging:currentPage:displayPerPage ">
+                        <td>
+                            <div class=" ">
+                                <div class='inline'>
+                                    <avatar [avatardata]="getAvatarData(review.name)"></avatar>
+                                </div>
+                                <div class='inline'>
+                                    <b> {{review.name }} </b><br>
+                                    <div class="pull-left">
+                                        <ac-stars [starCount]=5 [rating]="review.star " (rate)='changeRate($event) '> </ac-stars>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <blockquote>{{review.review}} </blockquote>
+                                </div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class='col-md-4 ' *ngIf='IsDataLoaded==f alse '>
+                <img src='https://d13yacurqjgara.cloudfront.net/users/107759/screenshots/2436386/copper-loader.gif ' />
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</div>
